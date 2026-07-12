@@ -248,6 +248,7 @@ button:active {
 .feed {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
+	padding-right: 2rem;
 }
 
 .feedLeft {
@@ -289,6 +290,13 @@ button:active {
 
 .announcementsContent {
 	grid-row: 2 / 3;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border: solid white;
+	border-radius: 20px;
+	padding: 2rem;
+	justify-content: space-between;
 }
 
 .feedProjectsContent {
@@ -296,7 +304,7 @@ button:active {
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	gap: 2rem;
-	padding: 0 2rem;
+	padding: 0 2rem 2rem 2rem;
 }
 
 .feedProjectCard {
@@ -338,6 +346,18 @@ button:active {
 	font-weight: bold;
 }
 
-.projectDescription {
+.projectDescription,
+.announcementDescription {
 	color: rgb(111, 110, 110);
+}
+
+.announcementTitle {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.announcementItem {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
 }
