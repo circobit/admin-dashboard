@@ -244,3 +244,46 @@ button:active {
 	fill: rgb(201, 50, 50);
 	cursor: pointer;
 }
+
+.feed {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.feedLeft {
+	display: grid;
+	grid-template-rows: 4rem 1fr;
+}
+
+.feedRight {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.announcementsContainer {
+	display: grid;
+	grid-template-rows: 4rem 1fr;
+}
+
+.trendingContainer {
+	display: grid;
+	grid-template-rows: 4rem 1fr;
+}
+
+.feedProjectsHeader,
+.announcementsHeader,
+.trendingHeader {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.announcementsHeader {
+	grid-row: 1 / 2;
+}
+
+.announcementsContent {
+	grid-row: 2 / 3;
+}
+
