@@ -147,6 +147,7 @@ nav li a span {
 	grid-column: 1 / 2;
 	justify-content: start;
 	align-items: center;
+	gap: 1rem;
 }
 
 .searchBarRight {
@@ -211,13 +212,14 @@ nav li a span {
 }
 
 button {
-	padding: 0.5rem 1rem;
+	padding: 0.7rem 1rem;
 	background-color: rgb(63, 157, 233);
 	border: 1px solid rgb(63, 157, 233);
-	border-radius: 20px;
+	border-radius: 25px;
 	width: 7rem;
 	font-weight: bold;
 	color: white;
+	font-size: 1.2rem;
 }
 
 button:hover,
