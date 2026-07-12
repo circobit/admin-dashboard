@@ -185,7 +185,8 @@ nav li a span {
 	background-color: rgb(221, 220, 220);
 }
 
-.profileImg {
+.profileImg,
+.trendingImg {
 	height: 4rem;
 }
 
@@ -259,6 +260,7 @@ button:active {
 .feedRight {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
+	padding-bottom: 2rem;
 }
 
 .announcementsContainer {
@@ -310,6 +312,7 @@ button:active {
 .feedProjectCard {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	gap: 2rem;
 	padding: 2rem;
 	background-color: white;
@@ -347,7 +350,8 @@ button:active {
 }
 
 .projectDescription,
-.announcementDescription {
+.announcementDescription,
+.trendingUserDescription {
 	color: rgb(111, 110, 110);
 }
 
@@ -360,4 +364,26 @@ button:active {
 	display: flex;
 	flex-direction: column;
 	gap: 0.2rem;
+}
+
+.trendingItem {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.trendingDetails {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.trendingContent {
+	background-color: white;
+	padding: 2rem;
+	border: solid white;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
