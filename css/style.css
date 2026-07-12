@@ -279,6 +279,10 @@ button:active {
 	font-weight: bold;
 }
 
+.feedProjectsHeader {
+	padding-left: 2rem;
+}
+
 .announcementsHeader {
 	grid-row: 1 / 2;
 }
@@ -287,3 +291,53 @@ button:active {
 	grid-row: 2 / 3;
 }
 
+.feedProjectsContent {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 2rem;
+	padding: 0 2rem;
+}
+
+.feedProjectCard {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 2rem;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 20px;
+	border-left: 10px solid rgb(242, 193, 78);
+}
+
+.projectButtons svg {
+	width: 2rem;
+	height: 2rem;
+}
+
+.projectButtons {
+	display: flex;
+	justify-content: end;
+	gap: 1rem;
+}
+
+.projectButtons svg:hover,
+.projectButtons svg:active {
+	fill: rgb(63, 157, 233);
+	cursor: pointer;
+}
+
+.projectCardNameAndDescription {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.projectName {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.projectDescription {
+	color: rgb(111, 110, 110);
+}
